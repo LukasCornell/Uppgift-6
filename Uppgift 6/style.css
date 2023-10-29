@@ -1,0 +1,85 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    width: 100vh;
+} 
+
+
+
+body{
+    margin: 0;
+}
+
+main{
+    width: 40%;
+    margin-inline: auto ;
+    
+}
+
+header{
+    background-image: linear-gradient(to right, red,magenta,aqua);
+}
+
+.topheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-inline: auto;
+}
+
+h1{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.side_background{
+    background-color: rgb(147, 147, 147);
+    height: 200px;
+    width: 150px; 
+}
+
+.primary-navigation{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.side_menu{
+    position: relative;
+    grid-column-start: 1;
+    bottom: 300px;
+    left: 1200px;
+}
+
+.side_list{
+    list-style: decimal;
+}
+
+.list{
+    margin: 50px;
+}
+
+.grid-row{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.grid-row:nth-child(odd){
+    background-color: gray;
+
+}
+
+
+/*
+.white{
+    background-color: white;
+}
+.gray{
+    background-color: lightgray;
+}
+
+*/
